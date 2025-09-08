@@ -76,7 +76,8 @@ export default function Home() {
             type="text"
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-lg p-2"
+            className="mt-1 block w-full border border-gray-300 rounded-lg p-2 
+                       text-gray-900 font-medium placeholder-gray-400"
             placeholder="Escribe tu nombre"
           />
         </label>
@@ -86,7 +87,8 @@ export default function Home() {
           <textarea
             value={mensaje}
             onChange={(e) => setMensaje(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-lg p-2 h-40 resize-none"
+            className="mt-1 block w-full border border-gray-300 rounded-lg p-2 h-40 resize-none 
+                       text-gray-900 font-medium placeholder-gray-400"
             placeholder="Escribe tu pedido de oración"
           />
         </label>
@@ -94,7 +96,7 @@ export default function Home() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 disabled:opacity-50"
+          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 disabled:opacity-50 cursor-pointer"
         >
           {loading ? "Enviando..." : "Enviar Pedido 🙏"}
         </button>
@@ -109,3 +111,4 @@ export default function Home() {
     </div>
   );
 }
+
